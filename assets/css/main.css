@@ -1,5 +1,6 @@
 body {
   display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -7,10 +8,24 @@ body {
 
 main {
   flex-grow: 1;
+
+  max-width: 1040px;
+
+  margin: 0 auto;
   padding-inline: 32px;
+}
+
+header {
+  margin-bottom: 64px;
 }
 
 #sidebar {
   background-color: ghostwhite;
   padding-inline: 32px;
+}
+
+#attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  row-gap: 16px;
 }
